@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/space16">
+
+    <ImageView
+            android:id="@+id/second_avatar"
+            android:src="@drawable/image_2"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/recipeImg"
+            android:layout_height="@dimen/recipeImg" />
+
+    <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space8"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5" />
+
+    <TextView
+            android:id="@+id/second_titulo"
+            style="@style/SemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space8"
+            android:gravity="center_horizontal"
+            android:text="RECIPES"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/h3" />
+
+    <TextView
+            android:id="@+id/second_contenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_schedule_black_24dp"
+            android:drawableTint="@color/colorGrey"
+            android:drawablePadding="@dimen/space8"
+            android:text="1h 20'"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="@dimen/h3" />
+
+</LinearLayout>

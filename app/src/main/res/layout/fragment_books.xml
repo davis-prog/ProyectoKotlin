@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Views.Fragments.BottomNavigation.BooksFragment">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <TextView
+                        android:textStyle="normal|bold"
+                        android:text="Novelas"
+                        android:textColor="@color/cardview_dark_background"
+                        android:layout_width="match_parent"
+                        android:padding="8dp"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"/>
+
+                <android.support.v7.widget.RecyclerView
+
+                        android:id="@+id/RecyclerView_books"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+                </android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                        android:textStyle="normal|bold"
+                        android:text="Cuentos"
+                        android:textColor="@color/cardview_dark_background"
+                        android:layout_width="match_parent"
+                        android:padding="8dp"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"/>
+
+                <android.support.v7.widget.RecyclerView
+
+                        android:id="@+id/RecyclerView_books2"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

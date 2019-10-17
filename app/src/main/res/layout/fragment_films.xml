@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Views.Fragments.BottomNavigation.FilmsFragment">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/SwipeRefreshLayout_films"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecyclerView_films"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!-- <GridView
+             android:id="@+id/grid"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:columnWidth="120dp"
+             android:horizontalSpacing="@dimen/espacio_grilla"
+             android:numColumns="auto_fit"
+             android:padding="@dimen/espacio_grilla"
+             android:verticalSpacing="@dimen/espacio_grilla" />-->
+
+
+</FrameLayout>

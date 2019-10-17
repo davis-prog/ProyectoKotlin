@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_margin="2dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp">
+
+
+    <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/listPreferredItemHeight"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/music_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:transitionName="@string/TransitionAvatar"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_centerVertical="true"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:id="@+id/music_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:text="Nombre"
+                android:textAppearance="?attr/textAppearanceListItem"
+                tools:text="Alexander Pierrot"
+                android:transitionName="@string/TransitionTitulo"
+        />
+
+        <TextView
+                android:id="@+id/music_autor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/music_titulo"
+                android:layout_below="@+id/music_titulo"
+                android:text="Cargo"
+                android:transitionName="@string/TransitionDetalle"
+                tools:text="CEO"/>
+
+        <TextView
+                android:id="@+id/music_contenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/music_titulo"
+                android:layout_below="@+id/music_autor"
+                android:text="Compañia"
+                tools:text="Blue Insurances Ltd"
+                android:transitionName="@string/TransitionContenido"
+        />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
