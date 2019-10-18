@@ -157,7 +157,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 navigateToFragment(SlideshowFragment.newInstance())
             }
             R.id.nav_tools -> {
-                title = "Tools"
+                title = getString(R.string.TitleTools)
                 navigationPosition = R.id.nav_tools
                 navigateToFragment(ToolsFragment.newInstance())
             }
