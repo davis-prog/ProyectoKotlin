@@ -158,6 +158,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_tools -> {
                 title = "Ttools"
+                // haciendo un cambio
                 navigationPosition = R.id.nav_tools
                 navigateToFragment(ToolsFragment.newInstance())
             }
