@@ -4,17 +4,17 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.support.design.widget.NavigationView
-import android.support.v4.app.ActivityOptionsCompat
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentTransaction
-import android.support.v4.view.GravityCompat
-import android.support.v4.widget.DrawerLayout
-import android.support.v7.app.ActionBarDrawerToggle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.Toolbar
+import com.google.android.material.navigation.NavigationView
+import androidx.core.app.ActivityOptionsCompat
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.widget.Toolbar
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -25,9 +25,13 @@ import david.app.proyectokotlin.Views.DetailsActivity
 import java.io.Serializable
 import java.lang.Exception
 //import android.util.Pair as UtilPair
-import android.support.v4.util.Pair as AndroidPair
+import androidx.core.util.Pair as AndroidPair
 import android.view.inputmethod.InputMethodManager
-import android.support.v7.widget.SearchView
+import androidx.appcompat.widget.SearchView
+import android.view.Gravity
+import com.infideap.drawerbehavior.Advance3DDrawerLayout
+import com.infideap.drawerbehavior.AdvanceDrawerLayout
+
 import david.app.proyectokotlin.Adapter.RecyclerAdapter
 import david.app.proyectokotlin.Entity.DogsResponse
 import david.app.proyectokotlin.Entity.Superhero
@@ -53,9 +57,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     val mAdapter: RecyclerAdapter = RecyclerAdapter()
 
     lateinit var toolbar: Toolbar
-    lateinit var drawerLayout: DrawerLayout
+    //lateinit var drawerLayout: DrawerLayout
+    //lateinit var drawerLayout: Advance3DDrawerLayout
+    lateinit var drawerLayout: AdvanceDrawerLayout
+
     lateinit var navigationView: NavigationView
     var navigationPosition: Int = 0
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,7 +80,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
            searchBreed.setOnQueryTextListener(this)*/
 
 
-        drawerLayout = findViewById(R.id.drawer_layout) as DrawerLayout
+        //drawerLayout = findViewById(R.id.drawer_layout) as DrawerLayout
+        //drawerLayout = findViewById(R.id.drawer_layout) as Advance3DDrawerLayout
+        drawerLayout = findViewById(R.id.drawer_layout) as AdvanceDrawerLayout
+
         navigationView = findViewById(R.id.nav_view) as NavigationView
         setUpDrawerLayout()
 
@@ -82,6 +95,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         navigationView.setNavigationItemSelectedListener(this)
 
         changeNavigationHeaderInfo()
+
+        // Advance3DDrawerLayout
+       /* drawerLayout.setViewScale(Gravity.START, 0.96f)
+        drawerLayout.setRadius(Gravity.START, 20f)
+        drawerLayout.setViewElevation(Gravity.START, 8f)
+        drawerLayout.setViewRotation(Gravity.START, 15f)*/
+
+        drawerLayout.useCustomBehavior(Gravity.START)
+        drawerLayout.useCustomBehavior(Gravity.END)
 
     }
 

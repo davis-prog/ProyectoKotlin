@@ -2,8 +2,8 @@ package david.app.proyectokotlin.Views.Fragments.Tabs
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -50,19 +50,31 @@ class FirstFragment : Fragment() {
             mAdapterBreakfast.RecyclerAdapter_First(getBreakfast(), "BRE")
             RecyclerView_first_breakfast.setHasFixedSize(true)
             RecyclerView_first_breakfast.layoutManager =
-                LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+                LinearLayoutManager(
+                    requireContext(),
+                    LinearLayoutManager.HORIZONTAL,
+                    false
+                )
             RecyclerView_first_breakfast.adapter = mAdapterBreakfast
 
             mAdapterCategory.RecyclerAdapter_First(getCategoria(), "CAT")
             RecyclerView_first_category.setHasFixedSize(true)
             RecyclerView_first_category.layoutManager =
-                LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+                LinearLayoutManager(
+                    requireContext(),
+                    LinearLayoutManager.HORIZONTAL,
+                    false
+                )
             RecyclerView_first_category.adapter = mAdapterCategory
 
             mAdapterLearn.RecyclerAdapter_First(getLearn(), "LEARN")
             RecyclerView_first_Learn.setHasFixedSize(true)
             RecyclerView_first_Learn.layoutManager =
-                LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+                LinearLayoutManager(
+                    requireContext(),
+                    LinearLayoutManager.HORIZONTAL,
+                    false
+                )
             RecyclerView_first_Learn.adapter = mAdapterLearn
 
 

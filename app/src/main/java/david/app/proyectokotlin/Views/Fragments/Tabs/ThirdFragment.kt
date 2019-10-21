@@ -2,8 +2,8 @@ package david.app.proyectokotlin.Views.Fragments.Tabs
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.StaggeredGridLayoutManager
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,7 +38,10 @@ class ThirdFragment : Fragment() {
 
             mAdapter.RecyclerAdapter_Third(getListItemData())
             RecyclerView_Third.setHasFixedSize(true)
-            RecyclerView_Third.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+            RecyclerView_Third.layoutManager = StaggeredGridLayoutManager(
+                2,
+                StaggeredGridLayoutManager.VERTICAL
+            )
             RecyclerView_Third.adapter = mAdapter
 
         }

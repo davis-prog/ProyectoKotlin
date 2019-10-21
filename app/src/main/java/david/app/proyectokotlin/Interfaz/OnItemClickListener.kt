@@ -1,6 +1,6 @@
 package david.app.proyectokotlin.Interfaz
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 
 interface OnItemClickListener {

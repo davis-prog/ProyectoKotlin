@@ -4,12 +4,12 @@ package david.app.proyectokotlin.Views.Fragments.BottomNavigation
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.support.v4.app.ActivityOptionsCompat
-import android.support.v4.app.Fragment
-import android.support.v4.util.Pair
-import android.support.v4.widget.SwipeRefreshLayout
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.core.app.ActivityOptionsCompat
+import androidx.fragment.app.Fragment
+import androidx.core.util.Pair
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -60,7 +60,11 @@ class BooksFragment : Fragment() {
 
             mRecyclerView = it.findViewById(R.id.RecyclerView_books) as RecyclerView
             mRecyclerView.setHasFixedSize(true)
-            mRecyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+            mRecyclerView.layoutManager = LinearLayoutManager(
+                requireContext(),
+                LinearLayoutManager.HORIZONTAL,
+                false
+            )
             mRecyclerView.adapter = mAdapter_novelas
             mRecyclerView.addOnItemClickListener(object : OnItemClickListener {
                 override fun onItemClicked(position: Int, view: View) {
@@ -92,7 +96,11 @@ class BooksFragment : Fragment() {
 
             mRecyclerView2 = it.findViewById(R.id.RecyclerView_books2) as RecyclerView
             mRecyclerView2.setHasFixedSize(true)
-            mRecyclerView2.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+            mRecyclerView2.layoutManager = LinearLayoutManager(
+                requireContext(),
+                LinearLayoutManager.HORIZONTAL,
+                false
+            )
             mRecyclerView2.adapter = mAdapter_cuentos
             mRecyclerView2.addOnItemClickListener(object : OnItemClickListener {
                 override fun onItemClicked(position: Int, view: View) {

@@ -1,8 +1,8 @@
 package david.app.proyectokotlin.Adapter
 
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
 import david.app.proyectokotlin.Views.Fragments.Tabs.FirstFragment
 import david.app.proyectokotlin.Views.Fragments.Tabs.SecondFragment
 import david.app.proyectokotlin.Views.Fragments.Tabs.ThirdFragment

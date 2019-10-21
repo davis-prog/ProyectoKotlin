@@ -2,10 +2,10 @@ package david.app.proyectokotlin.Views.Fragments.NavigationView
 
 
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
-import android.support.design.widget.CoordinatorLayout
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentTransaction
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View

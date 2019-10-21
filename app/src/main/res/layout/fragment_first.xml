@@ -32,13 +32,13 @@
                         app:strokeWidth="1dp">
                 </com.synnapps.carouselview.CarouselView>
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/RecyclerView_first_category"
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp">
 
-                </android.support.v7.widget.RecyclerView>
+                </androidx.recyclerview.widget.RecyclerView>
 
                 <TextView
                         android:text="Easy breakfast"
@@ -52,13 +52,13 @@
                         android:textSize="18sp"
                         android:layout_height="wrap_content"/>
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/RecyclerView_first_breakfast"
                         android:layout_width="match_parent"
                         android:layout_height="240dp"
                         android:padding="5dp">
 
-                </android.support.v7.widget.RecyclerView>
+                </androidx.recyclerview.widget.RecyclerView>
 
 
                 <TextView
@@ -73,13 +73,13 @@
                         android:textSize="18sp"
                         android:layout_height="wrap_content"/>
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/RecyclerView_first_Learn"
                         android:layout_width="match_parent"
                         android:layout_height="260dp"
                         android:padding="5dp">
 
-                </android.support.v7.widget.RecyclerView>
+                </androidx.recyclerview.widget.RecyclerView>
 
             </LinearLayout>
 

@@ -3,10 +3,10 @@ package david.app.proyectokotlin.Eventos
 import android.content.Context
 import android.graphics.Color
 import android.os.Build
-import android.support.annotation.ColorRes
-import android.support.annotation.DrawableRes
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
+import androidx.annotation.ColorRes
+import androidx.annotation.DrawableRes
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import android.view.View
 import android.view.WindowManager
 import android.widget.TextView

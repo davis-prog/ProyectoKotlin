@@ -27,12 +27,12 @@
                         android:textSize="18sp"
                         android:layout_height="wrap_content"/>
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
 
                         android:id="@+id/RecyclerView_books"
                         android:layout_width="match_parent"
                         android:layout_height="220dp">
-                </android.support.v7.widget.RecyclerView>
+                </androidx.recyclerview.widget.RecyclerView>
 
 
                 <TextView
@@ -44,12 +44,12 @@
                         android:textSize="18sp"
                         android:layout_height="wrap_content"/>
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
 
                         android:id="@+id/RecyclerView_books2"
                         android:layout_width="match_parent"
                         android:layout_height="220dp">
-                </android.support.v7.widget.RecyclerView>
+                </androidx.recyclerview.widget.RecyclerView>
 
             </LinearLayout>
 
