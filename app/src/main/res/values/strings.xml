@@ -18,6 +18,7 @@
     <string name="TransitionTitulo">transitionTitulo</string>
     <string name="TransitionContenido">transitionContenido</string>
     <string name="TransitionDetalle">transitionDetalle</string>
+    <string name="button.finish">FINISH</string>
 
 
 </resources>
